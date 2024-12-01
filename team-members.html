@@ -37,11 +37,45 @@
                         <p>Asim Mirzakhanli from School of IT and Engineering<br>ADA email: amizakhanli23339@ada.edu.az<br>Major: Bachelor of Science in Information Technology<br><strong>"I like video games."</strong></p>
                     </td>
                     <td>
-                        &emsp;<img class="team" src="media/team.jpg" width="500" height="400" alt="Our Team 72">
+                        &emsp;<img id="t1" class="team" src="media/team.jpg" width="500" height="400" alt="Our Team 72">
                     </td>
                 </tr>
             </table>
         </main>
+        <script>
+            // Select the iframe element
+            const iframe = document.getElementById('t1');
+        
+            // Function to create a subtle pulse effect
+            function pulse() {
+                let start = null;
+                let scale = 1;
+                const scaleSpeed = 0.005; // Speed of pulsing
+                const maxScale = 1.035; // Slight maximum size increase
+                const minScale = 1.02; // Slight minimum size decrease
+        
+                // Function to update iframe's scale
+                function animate(time) {
+                    if (!start) start = time;
+                    const progress = time - start;
+        
+                    // Use a sine wave for a gentle pulsing effect
+                    scale = minScale + Math.sin(progress * scaleSpeed) * (maxScale - minScale);
+        
+                    // Apply the transformation to the iframe (without changing position)
+                    iframe.style.transform = `scale(${scale})`;
+        
+                    // Continue the animation indefinitely
+                    requestAnimationFrame(animate);
+                }
+        
+                // Start the pulse animation
+                requestAnimationFrame(animate);
+            }
+        
+            // Trigger the pulse effect
+            pulse();
+        </script>      
         <footer>
             <p>&emsp;<strong>#Homework 3: How websites work?</strong><br>
             &emsp;<strong>2024</strong> | Team Syntax Squad</p>
