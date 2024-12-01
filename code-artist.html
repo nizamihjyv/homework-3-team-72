@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)2024 by Tamerlan Guliyev
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Programming art</title>
+        <link rel="stylesheet" href="styles.css">  
+        <link rel="icon" type="image/x-icon" href="media/web_icon.ico">
+        <script src="scripts.js" src="scripts.js"></script>      
+    </head>
+    <body>
+        <header>
+            <h2>&emsp;Code Art?</h2>
+        </header>
+        <div class="topnav">
+            <a class="active" href="index.html">Home Page</a>
+            <a href="hour-of-code.html">Hour of Code</a>
+            <a href="team-members.html">Our Team</a>
+            <a href="web-project.html">Website Project</a>
+            <a href="code-artist.html">Code Art?</a>
+        </div>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <h2>&emsp;Here is Our Code Art</h2>
+                    <p style="text-align:left">&emsp;We created this vibrant spiral art inspired by Code.org's<br>&emsp;Express Course (2024). By applying coding concepts like<br>&emsp;loops, functions, and randomization,we designed a logarithmic<br>&emsp;spiral that appears with different random colors each time the<br>&emsp;page is opened. This artwork demonstrates how programming<br>&emsp;can blend creativity and technology!<br><strong>&emsp;Refresh the page to change color</strong></p>
+                </td>
+                <td>
+                    <div style="text-align:right">
+                        &emsp;<canvas id="art-canvas" width="480" height="360">
+                            Sorry ... your browser doesn't support the HTML5 canvas element.
+                        </canvas>  
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&emsp;<strong>#Homework 3: How websites work?</strong><br>
+                    &emsp;<strong>2024</strong> | Team Syntax Squad</p>
+                </td>
+            </tr>
+        </table>          
+        <script type="text/javascript">
+            // Get reference to the 2D context of the canvas
+            let canvas = document.getElementById("art-canvas");
+            let context = canvas.getContext("2d");
+    
+            // Calling the function
+            DrawComplexSpiral(context);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    border: 4px solid whitesmoke;
+}
+
+.team, iframe{
+    border: 6px solid whitesmoke;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    color: white;
+}
+
+:root {
+    --ada-blue: #336178;
+    --ada-red: #ae485e;
+}
+
+body {
+    background-image: url(media/background.jpg);
+}
+
+p, li, a, b{
+    font-family: "PT Sans", sans-serif;
+    color: whitesmoke;
+}
+
+h1, h2{
+    font-family: "PT Sans", sans-serif;;
+    color: #EEEEEE;
+}
+
+p, li, iframe, img, a, canvas, table{
+    animation: appear 1s ease-in;
+}
+
+p, li {
+    font-size: large;
+}
+
+input{
+    font-family: "PT Sans", sans-serif;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0.1;
+        transform: translateY(12px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.button{
+    background-color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section{
+    border: white;
+}
+
+header{
+    margin: 0px;
+    background-color: #4682b4;
+    border: 4px solid whitesmoke;
+}
+
+input{
+    cursor: pointer;
+    border-bottom: 2px;
+    border-color: whitesmoke;
+    border-radius: 2px;
+    height: 17px
+}
+
+input:hover{
+    color: blue;
+    border-color: blue;
+}
+
+div{
+    border-color: white;
+    border-width: 5px;
+}
+
+b{
+    font-size: large;
+}
+
+table.contribution{
+    border: 4px solid whitesmoke;
+    border-collapse: collapse;
+    background-color: #4682b4;
+}
+
+td.contribution{
+    border: 4px solid whitesmoke;
+}
