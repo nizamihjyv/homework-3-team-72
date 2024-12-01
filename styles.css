@@ -45,7 +45,7 @@ h1, h2{
     color: #EEEEEE;
 }
 
-p, li, iframe, img, a, canvas, table{
+p, li, img, a, canvas, table{
     animation: appear 1s ease-in;
 }
 
